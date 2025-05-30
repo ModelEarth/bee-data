@@ -96,6 +96,20 @@ This dataset was sourced directly from the [**USDA Quick Stats**](https://quicks
 5. **Creating a Binary Classification Target**:
    - The top **20% of counties with the highest bee population density** are labeled as `1` (high-density), while others are labeled as `0`.
    - This classification can be useful for **predictive modeling** in environmental studies.
+     
+6. **Main Steps to upload the csv file in GitHub**
+   - **Read the file locally**:
+   - The CSV file is opened in binary mode and its contents are read.
+   - **Base64 encode the file**:
+   - GitHub’s API requires files to be sent as base64-encoded strings, so the raw content is encoded accordingly.
+   - **Check if the file exists in the repo**:
+   - A GET request is sent to check whether the file already exists in the target repository path and branch.
+   - **Construct the payload**:
+   - A JSON payload is prepared containing the commit message, the encoded file content, and (if updating) the SHA of the existing file.
+   - **Send a PUT request to upload or update**:
+   - The file is pushed to GitHub using a PUT request — it either creates the file or updates the existing one.
+   - Print the result
+   - prints a success message and the file URL if the upload was successful, or error details if it failed.
 
 ## How to Use
 1. **Open the Notebook** in Google Colab:
