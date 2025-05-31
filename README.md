@@ -24,7 +24,7 @@ Backup and run locally in [models/location-forest](../../models/location-forest/
 	python location-forest-output-bkup.ipynb bees
 
 
-[2-column Target tables](https://github.com/ModelEarth/realitystream/tree/main/input/bees/targets) containing county Fips.
+[2-column Target tables](https://github.com/ModelEarth/bee-data/tree/main/targets) containing county Fips.
 
 
 [Our Run Models colab](../industries/) merges 2-column bee targets data for counties with features data with rows for industries and demographic data for each county.
