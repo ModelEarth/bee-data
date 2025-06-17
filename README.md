@@ -133,3 +133,5 @@ Backup and run locally in [models/location-forest](../../models/location-forest/
 </div>
 
 [Prior Bees Output](../../output/bees/)
+
+Factors that contribute to bee colony decline: nutrition deficiencies, mite infestations, viral diseases, pesticide exposure, temperature.
